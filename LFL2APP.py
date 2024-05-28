@@ -110,7 +110,7 @@ class OrdemServicoApp:
 
         mensagem = (
             f"Olá {nome}, segue sua {tipo.lower()} #{numero_ordem}: {servico}, Realizado em {data_formatada}, "
-            f"no valor de R${valor}, LFLINFORMÁTICA, Rua David Geronasso 820."
+            f"no valor de R${valor}, LFLINFORMÁTICA, ##."
         )
 
         if self.ordem_selecionada:
