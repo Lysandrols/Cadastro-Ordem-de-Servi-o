@@ -87,9 +87,9 @@ class OrdemServicoApp:
         self.atualizar_contador()
 
         if tipo == "Orçamento":
-            mensagem = f"Olá {nome}, segue seu orçamento #{numero_ordem}: {servico} realizado em {data_formatada}, no valor de R${valor}, LFLINFORMÁTICA, Rua David Geronasso 820."
+            mensagem = f"Olá {nome}, segue seu orçamento #{numero_ordem}: {servico} realizado em {data_formatada}, no valor de R${valor}, LFLINFORMÁTICA, ##."
         elif tipo == "Serviço":
-            mensagem = f"Olá {nome}, segue sua ordem de serviço #{numero_ordem}: {servico} realizado em {data_formatada}, no valor de R${valor}, LFLINFORMÁTICA, Rua David Geronasso 820."
+            mensagem = f"Olá {nome}, segue sua ordem de serviço #{numero_ordem}: {servico} realizado em {data_formatada}, no valor de R${valor}, LFLINFORMÁTICA, ##."
 
         try:
             kit.sendwhatmsg_instantly(f"+{telefone}", mensagem, wait_time=20, tab_close=True, close_time=5)
